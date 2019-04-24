@@ -1,0 +1,8 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/buildgit remote add origin https://github.com/Jokerkras/CarService.git
+/captures
+.externalNativeBuild
