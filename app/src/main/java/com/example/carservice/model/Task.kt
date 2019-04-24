@@ -1,5 +1,6 @@
 package com.example.carservice.model
 
+import android.arch.persistence.room.ColumnInfo
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
@@ -7,6 +8,6 @@ import android.arch.persistence.room.PrimaryKey
 data class Task (
     @PrimaryKey(autoGenerate = true)
     val id: Long,
-    val name: String,
-    val price: Double
+    @ColumnInfo(name = "Name") val name: String,
+    @ColumnInfo(name = "Price") val price: Double
 )
