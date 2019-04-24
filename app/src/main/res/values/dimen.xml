@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_marginHorizontal">16dp</dimen>
+    <dimen name="card_marginVertical">8dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_title_textSize">18sp</dimen>
+    <dimen name="card_task_textSize">12sp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+</resources>
