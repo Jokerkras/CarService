@@ -7,4 +7,8 @@
     <dimen name="card_task_textSize">12sp</dimen>
     <dimen name="card_radius">16dp</dimen>
     <dimen name="card_elevation">6dp</dimen>
+    <dimen name="button_margin">16dp</dimen>
+    <dimen name="tv_add_margin">12dp</dimen>
+    <dimen name="label_add_tv_margin">6dp</dimen>
+    <dimen name="add_textSize">16sp</dimen>
 </resources>

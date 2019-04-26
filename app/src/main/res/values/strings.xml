@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CarService</string>
+    <string name="VIN">VIN</string>
+    <string name="Mark">Марка</string>
+    <string name="Model">Модель</string>
+    <string name="Number">Гос. номер</string>
+    <string name="Tasks">Услуги</string>
+    <string name="Add">Добавить</string>
 </resources>
