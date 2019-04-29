@@ -5,16 +5,14 @@ import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.arch.persistence.room.TypeConverters
 import android.content.Context
-import com.example.carservice.model.Order
-import com.example.carservice.model.OrderDAO
-import com.example.carservice.model.Task
-import com.example.carservice.model.TaskDAO
+import com.example.carservice.model.*
 
-@Database(entities = [Order::class, Task::class], version = 1)
+@Database(entities = [Order::class, Task::class, OrderWithTask::class], version = 1)
 @TypeConverters(DateTypeConverter::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun orderDao(): OrderDAO
     abstract fun taskDao(): TaskDAO
+    abstract fun orderWithTaskDao(): OrderWithTaskDAO
 
     companion object {
         var INSTANCE: AppDatabase? = null

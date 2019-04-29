@@ -6,4 +6,6 @@
     <string name="Number">Гос. номер</string>
     <string name="Tasks">Услуги</string>
     <string name="Add">Добавить</string>
+    <string name="Question">Закрыть заказ</string>
+    <string name="Price">Стоимость: </string>
 </resources>

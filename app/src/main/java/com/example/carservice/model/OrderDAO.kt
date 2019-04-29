@@ -8,11 +8,11 @@ interface OrderDAO {
     fun getAll(): List<Order>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertGender(order: Order)
+    fun insertOrder(order: Order)
 
     @Update
-    fun updateGender(order: Order)
+    fun updateOrder(order: Order)
 
     @Delete
-    fun deleteGender(order: Order)
+    fun deleteOrder(order: Order)
 }

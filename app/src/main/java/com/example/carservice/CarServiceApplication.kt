@@ -12,7 +12,10 @@ class CarServiceApplication: Application() {
 
         val tasks = arrayListOf<Pair<String, Double>>(Pair<String, Double>("Замена масла", 600.0),
             Pair<String, Double>("Замена фильтров", 700.0),
-            Pair<String, Double>("Замена свечей", 500.0))
+            Pair<String, Double>("Замена свечей", 500.0),
+            Pair<String, Double>("Покраска", 6000.0),
+            Pair<String, Double>("Полировка фар", 400.0),
+            Pair<String, Double>("Химчистка", 3000.0))
 
         doAsync {
             val database = AppDatabase.getAppDataBase(context = this@CarServiceApplication)

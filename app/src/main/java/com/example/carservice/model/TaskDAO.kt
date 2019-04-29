@@ -11,4 +11,7 @@ interface TaskDAO {
 
     @Query("SELECT * FROM Task")
     fun getAll(): List<Task>
+
+    @Query("SELECT * FROM Task WHERE id = :id")
+    fun getTask(id: Long): Task
 }
