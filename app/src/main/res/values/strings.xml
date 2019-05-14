@@ -5,7 +5,12 @@
     <string name="Model">Модель</string>
     <string name="Number">Гос. номер</string>
     <string name="Tasks">Услуги</string>
+    <string name="Info">Описание</string>
     <string name="Add">Добавить</string>
     <string name="Question">Закрыть заказ</string>
     <string name="Price">Стоимость: </string>
+    <string name="DialogTitle">Закрыть заказ</string>
+    <string name="DialogQuestion">Вы уверены, что хотитн закрыть заказ?</string>
+    <string name="Yes">Да</string>
+    <string name="No">Нет</string>
 </resources>

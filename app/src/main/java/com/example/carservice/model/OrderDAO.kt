@@ -7,6 +7,9 @@ interface OrderDAO {
     @Query("SELECT * FROM `Order`")
     fun getAll(): List<Order>
 
+    @Query("SELECT * FROM `Order` WHERE id = :id")
+    fun getOrder(id: Long): Order
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertOrder(order: Order)
 

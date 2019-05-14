@@ -4,4 +4,126 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <TextView
+            android:layout_marginTop="@dimen/tv_add_margin"
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:layout_marginBottom="@dimen/label_add_tv_margin"
+            android:textSize="@dimen/add_textSize"
+            android:text="@string/VIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginBottom="@dimen/tv_add_margin"
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:id="@+id/tvVIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorPrimary"
+            android:textSize="@dimen/card_title_textSize"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHighlight="@color/colorPrimaryDark" android:textColorLink="@color/colorPrimary"
+            android:textCursorDrawable="@color/colorPrimary"/>
+
+    <TextView
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:layout_marginBottom="@dimen/label_add_tv_margin"
+            android:textSize="@dimen/add_textSize"
+            android:text="@string/Mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginBottom="@dimen/tv_add_margin"
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:id="@+id/tvMark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorPrimary"
+            android:textSize="@dimen/card_title_textSize"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHighlight="@color/colorPrimaryDark" android:textColorLink="@color/colorPrimary"
+            android:textCursorDrawable="@color/colorPrimary"/>
+
+    <TextView
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:layout_marginBottom="@dimen/label_add_tv_margin"
+            android:textSize="@dimen/add_textSize"
+            android:text="@string/Model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginBottom="@dimen/tv_add_margin"
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:id="@+id/tvModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorPrimary"
+            android:textSize="@dimen/card_title_textSize"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHighlight="@color/colorPrimaryDark" android:textColorLink="@color/colorPrimary"
+            android:textCursorDrawable="@color/colorPrimary"/>
+
+    <TextView
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:layout_marginBottom="@dimen/label_add_tv_margin"
+            android:textSize="@dimen/add_textSize"
+            android:text="@string/Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginBottom="@dimen/tv_add_margin"
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:id="@+id/tvNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorPrimary"
+            android:textSize="@dimen/card_title_textSize"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHighlight="@color/colorPrimaryDark" android:textColorLink="@color/colorPrimary"
+            android:textCursorDrawable="@color/colorPrimary"/>
+
+    <TextView
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:layout_marginBottom="@dimen/label_add_tv_margin"
+            android:textSize="@dimen/add_textSize"
+            android:text="@string/Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginBottom="@dimen/tv_add_margin"
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorPrimary"
+            android:textSize="@dimen/card_title_textSize"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHighlight="@color/colorPrimaryDark" android:textColorLink="@color/colorPrimary"
+            android:textCursorDrawable="@color/colorPrimary"/>
+
+    <TextView
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:layout_marginBottom="@dimen/label_add_tv_margin"
+            android:textSize="@dimen/add_textSize"
+            android:text="@string/Tasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTasks"
+            android:layout_marginBottom="@dimen/tv_add_margin"
+            android:layout_marginRight="@dimen/tv_add_margin"
+            android:layout_marginLeft="@dimen/tv_add_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+
 </LinearLayout>

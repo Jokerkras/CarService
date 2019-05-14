@@ -2,17 +2,14 @@ package com.example.carservice.activity
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import com.androidbuts.multispinnerfilter.KeyPairBoolData
 import com.androidbuts.multispinnerfilter.SpinnerListener
 import com.example.carservice.R
 import com.example.carservice.database.AppDatabase
 import com.example.carservice.model.Order
 import com.example.carservice.model.OrderWithTask
-import com.example.carservice.model.Task
 import kotlinx.android.synthetic.main.activity_add.*
 import org.jetbrains.anko.doAsync
-import java.text.DateFormat
 import java.util.*
 
 class AddActivity: AppCompatActivity(), SpinnerListener {
@@ -45,6 +42,7 @@ class AddActivity: AppCompatActivity(), SpinnerListener {
     }
 
     override fun onItemsSelected(p0: MutableList<KeyPairBoolData>?) {
+        // Обновление списка выбраных Task
         if (p0 != null) {
             selected = p0
         }
@@ -62,7 +60,8 @@ class AddActivity: AppCompatActivity(), SpinnerListener {
                 etModel.text.toString(),
                 etNumber.text.toString(),
                 Calendar.getInstance().time,
-                false
+                false,
+                etInfo.text.toString()
             )
         )
         for(it in selected){
