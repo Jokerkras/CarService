@@ -14,4 +14,7 @@ interface TaskDAO {
 
     @Query("SELECT * FROM Task WHERE id = :id")
     fun getTask(id: Long): Task
+
+    @Query("SELECT SUM(Price) FROM Task WHERE id IN (:ids)")
+    fun getPrice(ids: List<Long>): Double
 }
