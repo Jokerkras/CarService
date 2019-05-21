@@ -49,25 +49,53 @@ class AddActivity: AppCompatActivity(), SpinnerListener {
     }
 
     fun addOrder() {
-        val db = AppDatabase.getAppDataBase(this@AddActivity)
-        val count = db?.orderDao()?.getAll()?.count() ?: 0
-        val id = (count + 1).toLong()
-        db?.orderDao()?.insertOrder(
-            Order(
-                id,
-                etVIN.text.toString(),
-                etMark.text.toString(),
-                etModel.text.toString(),
-                etNumber.text.toString(),
-                Calendar.getInstance().time,
-                false,
-                etInfo.text.toString()
-            )
-        )
-        for(it in selected){
-            if(it.isSelected) db?.orderWithTaskDao()?.insert(OrderWithTask(id, it.id))
+        var Ok = true
+        if(etVIN.text.isEmpty()) {
+            etVIN.error = "поле VIN не может быть пустым"
+            Ok = false
         }
+        if(etMark.text.isEmpty()) {
+            etMark.error = "поле Марка не может быть пустым"
+            Ok = false
+        }
+        if(etModel.text.isEmpty()) {
+            etModel.error = "поле Модель не может быть пустым"
+            Ok = false
+        }
+        if(etNumber.text.isEmpty()) {
+            etNumber.error = "поле VIN не может быть пустым"
+            Ok = false
+        }
+        if(etInfo.text.isEmpty()) {
+            etInfo.error = "поле VIN не может быть пустым"
+            Ok = false
+        }
+        if(selected.isEmpty()) {
+            spinnerTasks.setBackgroundColor(resources.getColor(R.color.colorNotReady))
+            Ok = false
+        }
+        if (Ok) {
+            val db = AppDatabase.getAppDataBase(this@AddActivity)
+            val count = db?.orderDao()?.getAll()?.count() ?: 0
+            val id = (count + 1).toLong()
 
-        this@AddActivity.finish()
+            db?.orderDao()?.insertOrder(
+                Order(
+                    id,
+                    etVIN.text.toString(),
+                    etMark.text.toString(),
+                    etModel.text.toString(),
+                    etNumber.text.toString(),
+                    Calendar.getInstance().time,
+                    false,
+                    etInfo.text.toString()
+                )
+            )
+            for (it in selected) {
+                if (it.isSelected) db?.orderWithTaskDao()?.insert(OrderWithTask(id, it.id))
+            }
+
+            this@AddActivity.finish()
+        }
     }
 }
